@@ -1,0 +1,80 @@
+section{
+    font-family: Arial;
+    color: black;
+}
+
+h1{
+    font-weight:1000px;
+    font-family: 'tahoma';
+    color: black;
+    text-align: left;
+    padding-left: 20px;
+}
+img{
+        position: relative;
+        width: 15%;
+        border-radius: 50px;
+        margin-right: 15px;
+        margin-left: auto;
+        border: 5px solid;
+        border-color: pink;
+        transition: transform 0.4s;
+
+
+}
+img:hover{
+    transform: scale(1.1);
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+h3{
+    text-align: center;
+    }
+body{
+    background-color: black;
+
+    
+}
+p{
+    font-weight: bolder;
+    text-align: center;
+}
+.lala{
+    color: red;
+}
+main{
+    border: 5px solid;
+    color:blue;
+    background-color:white ;
+    border-radius: 60px 140px 40px 140px;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+}
+.routine{
+    color:chartreuse;
+    text-align: center;
+}
+.kain{
+    color: red;
+}
+.tulog{
+    color: orange;
+}
+.tambay{
+    color: green;
+}
+.Laro{
+    color: blue;
+}
+.repeat{
+    color:violet;
+}
+.tiil{
+    text-align: end;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-bottom: 10px;
+}
