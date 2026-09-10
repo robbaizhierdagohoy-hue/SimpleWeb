@@ -65,7 +65,7 @@ article{
     top: 45px;
     width: 350px;
     height: 350px;
-    border-radius: 50%;
+    border-radius: 50px;
     object-fit:cover;
     border: 5px darkgray solid;
     
@@ -97,7 +97,7 @@ article{
 .home h3{
     position: absolute;
     font-family: sans-serif;
-    left: 49%;
+    left: 52%;
     top: 55%;
     font-size: 25px;
     color: #08D9D6;
