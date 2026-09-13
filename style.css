@@ -22,7 +22,7 @@ body{
     width: 450px;
     height: 45px;
     padding-top: 4px;
-    background-color: #B6AE9F; 
+    background-color: #e92b0e; 
     position: sticky;
     top: 20px; 
     z-index: 1000;
@@ -84,7 +84,7 @@ article{
     left: 52%;
     top: 38%;
     font-size:40px;
-    color: #FF2E63;
+    color: #2b06bf;
 }
 .home h2{
     font-family: sans-serif;
@@ -92,12 +92,12 @@ article{
     left: 45%;
     top: 47%;
     font-size:40px;
-    color: #FF2E63;
+    color: #f204ab;
 }
 .home h3{
     position: absolute;
     font-family: sans-serif;
-    left: 52%;
+    left: 57%;
     top: 55%;
     font-size: 25px;
     color: #08D9D6;
@@ -154,16 +154,16 @@ h3 {
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 12px;
+    border-left: 5px solid #00e5ff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    border-top: 4px #FE7F2D solid ; 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
 
 }
 
 
 .info-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(8px);
+    box-shadow: 0 8px 15px rgba(21, 8, 130, 0.1);
 }
 
 .info-card .label {
