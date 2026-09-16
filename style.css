@@ -239,13 +239,82 @@ section .container {
     transform: translateY(-4px);
     box-shadow: 0px 5px 0px #000;
 }
-footer{
-  text-align: center;
-  padding: 25px 0;
-  margin-top: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 14px;
-  color: #666666; 
-  letter-spacing: 0.5px;
-  color: white;
+.contact-footer {
+    background-color: #1a1d24;
+    border-top: 4px solid #00e5ff;
+    padding: 50px 20px 20px 20px;
+    font-family: sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-footer h2 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.footer-tagline {
+    color: #a0aec0;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    background: #252a34;
+    border: 2px solid #3f72af;
+    border-radius: 12px;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    min-width: 240px;
+}
+
+.contact-item:hover {
+    transform: translateY(-7px);
+    border-color: #00e5ff;
+}
+
+.contact-details {
+    text-align: center;
+}
+
+.contact-label {
+    display: block;
+    font-size: 12px;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.contact-val {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    font-size: 13px;
+    color: #888888;
 }
