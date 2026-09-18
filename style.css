@@ -17,41 +17,85 @@ body{
 }
 
 .Navbar {
-    display: block; 
-    margin: auto; 
-    width: 450px;
-    height: 45px;
-    padding-top: 4px;
-    background-color: #e92b0e; 
+    /* Centering & Sticky Positioning */
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: fit-content;
+    height: 52px;
+    padding: 0 28px;
+    
     position: sticky;
-    top: 20px; 
+    top: 20px;
     z-index: 1000;
-    border-radius: 30px;
-    padding-left: 20px;
+
+    /* Visual Styling (Modern Glass & Accent Gradient) */
+    background: linear-gradient(135deg, rgba(233, 43, 14, 0.95), rgba(200, 30, 8, 0.95));
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 9999px; /* Pill shape */
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 30px -5px rgba(233, 43, 14, 0.3),
+                0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .Navbar nav ul {
-    padding-top: 10px;
-    padding-right: 15px;
     display: flex;
-    list-style: none; 
-    gap: 50px;     
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .Navbar nav ul li a {
-    display: block;
-    text-decoration: none; 
-    color: black;
-    font-family: sans-serif;
-    font-weight: bold;
-    transition: color 0.3s;
+    display: inline-block;
+    color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    position: relative;
+    padding: 6px 0;
+    
+    /* Hardware-accelerated smooth transitions */
+    transition: color 0.25s ease, transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+    will-change: transform;
 }
 
+/* Hover Accent - Underline Bar Animation */
+.Navbar nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: width 0.25s ease, left 0.25s ease;
+}
 
 .Navbar nav ul li a:hover {
-    color: rgb(248, 248, 248);
-    transform: scale(1.1);
-    text-decoration: underline;
+    color: #ffffff;
+    transform: translateY(-2px) scale(1.04);
+}
+
+.Navbar nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Active Link State */
+.Navbar nav ul li a.active {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.Navbar nav ul li a.active::after {
+    width: 100%;
+    left: 0;
 }
 article{
     height: 100vh;
