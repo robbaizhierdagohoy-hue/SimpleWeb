@@ -49,31 +49,28 @@ body {
     z-index: 1000;
 }
 .navbar {
-    background: rgba(15, 23, 42, 0.75);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgb(245, 242, 242);
-    border-radius: 9999px;
-    padding: 8px 16px;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-full);
+    padding: 6px 12px;
+    box-shadow: var(--shadow-md);
 }
-.nav-menu { 
-    display: flex; 
-    list-style: none; 
-    gap: 8px; 
-    border-radius: 25px;
-    padding: 3px;
-}
+
 .nav-link { 
-    color: #ffffff; 
+    color: var(--text-muted); 
     text-decoration: none; 
     font-size: 0.9rem; 
     font-weight: 600; 
     padding: 8px 18px; 
-    border-radius: 9999px; }
+    border-radius: var(--radius-full);
+    transition: var(--transition-smooth);
+}
 
 .nav-link:hover {
-    color: black;
-    background: white;
-    
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 /* ==========================================================================
