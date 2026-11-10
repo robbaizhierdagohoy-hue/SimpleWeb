@@ -30,9 +30,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* ==========================================================================
-   Floating Navigation Bar
-   ========================================================================== */
 .header {
     position: fixed;
     top: 20px;
@@ -41,38 +38,33 @@ body {
     display: flex;
     justify-content: center;
     z-index: 1000;
-    padding: 0 16px;
 }
-
 .navbar {
     background: rgba(15, 23, 42, 0.75);
     backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid var(--card-border);
-    border-radius: var(--radius-full);
+    border: 1px solid rgb(245, 242, 242);
+    border-radius: 9999px;
     padding: 8px 16px;
-    box-shadow: var(--shadow-lg);
 }
-
-.nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 8px;
+.nav-menu { 
+    display: flex; 
+    list-style: none; 
+    gap: 8px; 
+    border-radius: 25px;
+    padding: 3px;
 }
-
-.nav-link {
-    color: var(--text-muted);
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 600;
-    padding: 8px 18px;
-    border-radius: var(--radius-full);
-    transition: var(--transition-smooth);
-}
+.nav-link { 
+    color: #ffffff; 
+    text-decoration: none; 
+    font-size: 0.9rem; 
+    font-weight: 600; 
+    padding: 8px 18px; 
+    border-radius: 9999px; }
 
 .nav-link:hover {
-    color: var(--text-primary);
-    background: rgba(255, 255, 255, 0.06);
+    color: black;
+    background: white;
+    
 }
 
 /* ==========================================================================
