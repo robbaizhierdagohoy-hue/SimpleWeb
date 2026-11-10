@@ -25,6 +25,10 @@
     margin: 0;
     padding: 0;
 }
+html, body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 
 html {
     scroll-behavior: smooth;
@@ -44,8 +48,10 @@ body {
     top: 20px;
     left: 0;
     right: 0;
+    width: 100%;       /* Ensures it spans the full width */
     display: flex;
     justify-content: center;
+    align-items: center; /* Centers the navbar horizontally */
     z-index: 1000;
 }
 .navbar {
@@ -88,15 +94,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 120px 24px 60px;
+    padding: 60px 4px 60px;
     background: radial-gradient(circle at 50% 20%, rgba(14, 165, 233, 0.12), transparent 50%);
 }
 
 .hero-container {
     max-width: 1000px;
+    width: 100%;          
+    margin: 0 auto;    
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 40px;
     text-align: center;
 }
@@ -179,16 +188,17 @@ body {
 
 .hero-text h1 {
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 1.15;
     margin-bottom: 12px;
+    letter-spacing: -0.02em;
 }
 
 .accent-text {
     background: var(--accent-gradient);
-    padding: 0 6px;
-    border-radius: 20px;
-    color: white;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0;
 }
 
 .hero-subtitle {
