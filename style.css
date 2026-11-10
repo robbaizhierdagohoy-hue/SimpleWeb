@@ -245,11 +245,15 @@ body {
 .btn-secondary {
     background: rgba(255, 255, 255, 0.05);
     color: var(--text-primary);
-    border: 1px solid var(--card-border);
+    border: 2px solid var(--card-border);
+    font-weight: bold;
 }
 
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgb(200, 200, 226);
+    color: black;
+    border:3px solid rgb(121, 121, 245);
+    transform: translateY(-2px);
 }
 
 /* ==========================================================================
